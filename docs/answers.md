@@ -55,6 +55,13 @@
 * Investigate "ratio of training to test data"
 * Investigate "noise"
 * QUESTION: Can you find a scenario where training loss noticeably exceeds testing loss?
+* ANSWER:
+  * without any noise -- training and test loss are exactly zero
+  * with a lot of noise the effect is there, but it's not large
+    * ratio: training data 80%
+    * noise: 50
+    * test loss is 0.030
+    * training loss is 032
 
 ## Classification
 
@@ -66,18 +73,35 @@ Problem type: Classification
 * Investigate "ratio of training to test data"
 * Investigate "noise"
 * QUESTION: Can you find a scenario where training loss noticeably exceeds testing loss?
+* ANSWER:
+  * without any noise -- training and test loss are exactly zero
+  * with a lot of noise the effect is there, but it's not large
+    * ratio: training data 80%
+    * noise: 50
+    * test loss is 0.030
+    * training loss is 032
 
 ### Exercise #3
 
 Repeat Exercise #2 using the XOR dataset (dataset on upper right -- 2 blue squares & 2 orange squares)
+* ANSWER:
+  * with or without noise -- train and test loss are about 50%
 
 ### Exercise #4
 
 Repeat Exercise #2 using concentric circles (dataset on lower left)
+* ANSWER:
+  * discrepancy with train and test loss is noticeble
+  * gets particularly large with noisy data and small test set
+  * "Discretize output" shows that the model is predicting that everything is orange!
 
 ### Exercise #5
 
 Repeat Exercise #2 using concentric spirals (dataset on lower right)
+* ANSWER:
+  * discrepancy with train and test loss is noticeble
+  * gets particularly large with noisy data and small test set
+  * "Discretize output" shows that the model is predicting that everything is orange!
 
 ### Exercise #6
 
