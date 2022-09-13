@@ -44,8 +44,7 @@ $ R
 ```
 $ conda activate r_env
 $ R
-> library(janeaustenr)
-library(nycflights13)
+> library(nycflights13)
 
 write.table(airlines, file = "airlines.csv", sep = ",", row.names=FALSE, quote=FALSE, na="", qmethod = "double")
 write.table(airports, file = "airports.csv", sep = ",", row.names=FALSE, quote=FALSE, na="", qmethod = "double")
