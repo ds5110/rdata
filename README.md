@@ -2,6 +2,21 @@
 
 Data converted from R to CSV
 
+## Wage dataset
+
+A typical example of ISLR2 data...
+
+```
+conda activate r_env
+R
+> install.packages("ISLR2")
+> library(ISLR2)
+> summary(Wage)
+> write.csv(Wage, 'wage.csv', row.names=FALSE)
+> quit()
+conda deactivate
+```
+
 ## Install R & ISLR2
 
 ```
@@ -17,19 +32,6 @@ conda deactivate
 * [miniconda install](https://docs.conda.io/en/latest/miniconda.html) -- docs.conda.io
 * [managing environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 * [r-base install](https://anaconda.org/conda-forge/r-base)
-
-## Wage dataset
-
-```
-conda activate r_env
-R
-> install.packages("ISLR2")
-> library(ISLR2)
-> summary(Wage)
-> write.csv(Wage, 'wage.csv', row.names=FALSE)
-> quit()
-conda deactivate
-```
 
 ## ISLR2 data
 
