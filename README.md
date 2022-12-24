@@ -17,6 +17,25 @@ R
 conda deactivate
 ```
 
+## NC160 dataset
+
+* Microarray data has 6830 measurements of 64 cancer-cell lines.
+* Each cell line has a cancer-type label (`nci.labs`)
+* Data (`nci.data`) has 64 rows and 6830 columns
+
+```
+library(ISLR2)
+nci.labs <- NCI60$labs
+nci.data <- NCI60$data
+```
+
+* `typeof(NCI60)` returns "list", which is a heterogeneous data structure in R
+  * In R, the other heterogeneous data structure is a data frame
+* R has 5 data types
+  * 3 homogeneous data structures: atomic vector (1-D), matrix (2-D), array (n-D)
+  * 2 heterogeneous data structures: list, data frame
+* [Data structures in R](http://adv-r.had.co.nz/Data-structures.html) -- Hadley Wickham
+
 ## Install R & ISLR2
 
 ```
