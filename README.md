@@ -20,6 +20,9 @@ Notes from [Advanced R](https://adv-r.hadley.nz/introduction.html) (2nd edition)
   * NULL: not a vector, but closely related and often serves the role of a zero-length vector
 * every vector can have attributes
   * attributes can be thought of as a "named list of arbitrary metadata"
+  * "you can think of attributes as name-value pairs that attach metadata to an object"
+  * get and set attributes with `attr()`, get the all with `attributes()` and set a bunch with `structure()`
+  * "Attributes should generally be thought of as ephemeral" -- "most attributes are lost by most operations"
 * data structures not included in atomic vectors:
   * matrices
   * arrays
@@ -32,7 +35,7 @@ Notes from [Advanced R](https://adv-r.hadley.nz/introduction.html) (2nd edition)
 
 * [Advanced R](http://adv-r.had.co.nz/) (1st edition)
   * [Data structures](http://adv-r.had.co.nz/Data-structures.html)
-    * Great discussion of basic data types in R
+    * Discussion of basic data types in R
   * [Functional programming](http://adv-r.had.co.nz/Functional-programming.html#functional-programming)
     * Discussion of R as a functional programming language
 * [Advanced R](https://adv-r.hadley.nz/introduction.html) (2nd edition)
@@ -58,9 +61,15 @@ conda deactivate
 
 ## NC160 dataset
 
-* Microarray data has 6830 measurements of 64 cancer-cell lines.
+Microarray data has 6830 measurements of 64 cancer-cell lines.
+
+* a list containing two elements: data and labs.
+  * data is a 64 by 6830 matrix of the expression values
+  * labs is a vector listing the cancer types for the 64 cell lines.
 * Each cell line has a cancer-type label (`nci.labs`)
 * Data (`nci.data`) has 64 rows and 6830 columns
+* ISLR Ref: https://rdrr.io/cran/ISLR/man/NCI60.html
+* ISLR2 Ref: https://rdrr.io/cran/ISLR2/man/NCI60.html
 
 ```
 library(ISLR2)
