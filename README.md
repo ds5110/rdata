@@ -4,11 +4,27 @@ Data converted from R to CSV
 
 ## R data types
 
+Notes from [Advanced R](http://adv-r.had.co.nz/) (1st edition)...
+
 * R has 5 data types:
   * 3 homogeneous data structures: atomic vector (1-D), matrix (2-D), array (n-D)
   * 2 heterogeneous data structures: list, data frame
 * `str()` prints info about the structure of an R any object
 * There are no scalar (0-D) types in R -- strings and numbers are vectors of length one
+
+Notes from [Advanced R](https://adv-r.hadley.nz/introduction.html) (2nd edition)...
+
+* vectors: the most important family data types in R -- there are "two flavours of vectors":
+  * atomic vectors: all elements have the same type
+  * lists: elements can have different types (elements of lists are references)
+  * NULL: not a vector, but closely related and often serves the role of a zero-length vector
+* every vector can have attributes
+  * attributes can be thought of as a "named list of arbitrary metadata"
+* data structures not included in atomic vectors:
+  * matrices
+  * arrays
+  * factors
+  * date-times
 
 ## References
 
