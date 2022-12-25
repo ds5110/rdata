@@ -2,6 +2,15 @@
 
 Data converted from R to CSV
 
+## R data types
+
+* R has 5 data types:
+  * 3 homogeneous data structures: atomic vector (1-D), matrix (2-D), array (n-D)
+  * 2 heterogeneous data structures: list, data frame
+* `str()` prints info about the structure of an R any object
+* There are no scalar (0-D) types in R -- strings and numbers are vectors of length one
+* Ref: [Data structures in R](http://adv-r.had.co.nz/Data-structures.html) -- Hadley Wickham
+
 ## Wage dataset
 
 A typical example of ISLR2 data...
@@ -31,10 +40,6 @@ nci.data <- NCI60$data
 
 * `typeof(NCI60)` returns "list", which is a heterogeneous data structure in R
   * In R, the other heterogeneous data structure is a data frame
-* R has 5 data types
-  * 3 homogeneous data structures: atomic vector (1-D), matrix (2-D), array (n-D)
-  * 2 heterogeneous data structures: list, data frame
-* [Data structures in R](http://adv-r.had.co.nz/Data-structures.html) -- Hadley Wickham
 
 ## Install R & ISLR2
 
