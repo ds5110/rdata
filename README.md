@@ -16,10 +16,13 @@ Data converted from R to CSV
 
 * [Advanced R](http://adv-r.had.co.nz/) (1st edition)
   * [Data structures](http://adv-r.had.co.nz/Data-structures.html)
+    * Great discussion of basic data types in R
   * [Functional programming](http://adv-r.had.co.nz/Functional-programming.html#functional-programming)
+    * Discussion of R as a functional programming language
 * [Advanced R](https://adv-r.hadley.nz/introduction.html) (2nd edition)
   * [Advanced R: Introduction](https://adv-r.hadley.nz/introduction.html) (2nd edition)
-  * Answers the question: "Why R?"
+    * Answers the question: "Why R?"
+    * Honest discussion of pros and cons -- and introduction of DRY
 * [R for Data Science](https://r4ds.had.co.nz/)
 
 ## Wage dataset
