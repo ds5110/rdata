@@ -9,7 +9,18 @@ Data converted from R to CSV
   * 2 heterogeneous data structures: list, data frame
 * `str()` prints info about the structure of an R any object
 * There are no scalar (0-D) types in R -- strings and numbers are vectors of length one
-* Ref: [Data structures in R](http://adv-r.had.co.nz/Data-structures.html) -- Hadley Wickham
+
+## References
+
+...by Hadley Wickham
+
+* [Advanced R](http://adv-r.had.co.nz/) (1st edition)
+  * [Data structures](http://adv-r.had.co.nz/Data-structures.html)
+  * [Functional programming](http://adv-r.had.co.nz/Functional-programming.html#functional-programming)
+* [Advanced R](https://adv-r.hadley.nz/introduction.html) (2nd edition)
+  * [Advanced R: Introduction](https://adv-r.hadley.nz/introduction.html) (2nd edition)
+  * Answers the question: "Why R?"
+* [R for Data Science](https://r4ds.had.co.nz/)
 
 ## Wage dataset
 
