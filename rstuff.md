@@ -85,3 +85,5 @@ nci.data <- NCI60$data
   * PCA
     * Measurements of gene expression range from -6 to 6
     * Scaling before PCA is done, but it's arguable about whether or not scaling should be used
+* [Zhou & Hastie (2004)https://academic.oup.com/biostatistics/article/5/3/427/310192) (Oxford Univ Press) -- oup.com
+  * Logistic regression compared to SVM for classification with gene-expression microarray data
