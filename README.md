@@ -59,7 +59,7 @@ R
 conda deactivate
 ```
 
-## NC160 dataset
+## NCI60 dataset
 
 Microarray data has 6830 measurements of 64 cancer-cell lines.
 
@@ -68,8 +68,6 @@ Microarray data has 6830 measurements of 64 cancer-cell lines.
   * labs is a vector listing the cancer types for the 64 cell lines.
 * Each cell line has a cancer-type label (`nci.labs`)
 * Data (`nci.data`) has 64 rows and 6830 columns
-* ISLR Ref: https://rdrr.io/cran/ISLR/man/NCI60.html
-* ISLR2 Ref: https://rdrr.io/cran/ISLR2/man/NCI60.html
 
 ```
 library(ISLR2)
@@ -79,6 +77,17 @@ nci.data <- NCI60$data
 
 * `typeof(NCI60)` returns "list", which is a heterogeneous data structure in R
   * In R, the other heterogeneous data structure is a data frame
+* **References**
+* ISLR Ref: https://rdrr.io/cran/ISLR/man/NCI60.html
+* ISLR2 Ref: https://rdrr.io/cran/ISLR2/man/NCI60.html
+* NCI-60 human cancer cell-line screen
+  * [Cell list](https://dtp.cancer.gov/discovery_development/nci-60/cell_list.htm) -- cancer.gov
+  * [Methodology](https://dtp.cancer.gov/discovery_development/nci-60/methodology.htm) -- cancer.gov 
+* ESL refs
+  * Section 14.3.8 (p512) -- K-means
+    * Depends on: "K" and starting configuration
+  * Section 14.3.12 (p520-7) -- Hierarchical clustering
+    * Depends on: dissimilarity measure, clustering strategy (e.g., agglomerative/bottom-up, divisive/top-down)
 
 ## Install R & ISLR2
 
