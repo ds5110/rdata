@@ -4,7 +4,7 @@ Data converted from R to CSV
 
 ## ISLR2 data
 
-Wage dataset is a typical example of ISLR2 data...
+`Wage` is a typical example of an ISLR2 dataset...
 
 ```
 conda activate r_env

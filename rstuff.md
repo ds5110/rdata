@@ -60,13 +60,20 @@ nci.data <- NCI60$data
 
 * `typeof(NCI60)` returns "list", which is a heterogeneous data structure in R
   * In R, the other heterogeneous data structure is a data frame
-* **References**
+
+## NCI 60 References
+
 * ISLR Ref: https://rdrr.io/cran/ISLR/man/NCI60.html
 * ISLR2 Ref: https://rdrr.io/cran/ISLR2/man/NCI60.html
 * NCI-60 human cancer cell-line screen
+  * This is an application of the NCI 60 cell line
   * [Cell list](https://dtp.cancer.gov/discovery_development/nci-60/cell_list.htm) -- cancer.gov
   * [Methodology](https://dtp.cancer.gov/discovery_development/nci-60/methodology.htm) -- cancer.gov 
 * ESL refs
+  * Example 4 (p5 & 6) -- DNA expression microarrays
+    * Nice high-level description the dataset -- DNA expression for the NCI 60 cell line
+    * 6830 rows represent the genes 
+    * rows represent the genes 
   * Section 14.3.8 (p512) -- K-means
     * Depends on: "K" and starting configuration
   * Section 14.3.12 (p520-7) -- Hierarchical clustering
