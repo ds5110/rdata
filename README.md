@@ -2,51 +2,9 @@
 
 Data converted from R to CSV
 
-## R data types
+## ISLR2 data
 
-Notes from [Advanced R](http://adv-r.had.co.nz/) (1st edition)...
-
-* R has 5 data types:
-  * 3 homogeneous data structures: atomic vector (1-D), matrix (2-D), array (n-D)
-  * 2 heterogeneous data structures: list, data frame
-* `str()` prints info about the structure of an R any object
-* There are no scalar (0-D) types in R -- strings and numbers are vectors of length one
-
-Notes from [Advanced R](https://adv-r.hadley.nz/introduction.html) (2nd edition)...
-
-* vectors: the most important family data types in R -- there are "two flavours of vectors":
-  * atomic vectors: all elements have the same type
-  * lists: elements can have different types (elements of lists are references)
-  * NULL: not a vector, but closely related and often serves the role of a zero-length vector
-* every vector can have attributes
-  * attributes can be thought of as a "named list of arbitrary metadata"
-  * "you can think of attributes as name-value pairs that attach metadata to an object"
-  * get and set attributes with `attr()`, get the all with `attributes()` and set a bunch with `structure()`
-  * "Attributes should generally be thought of as ephemeral" -- "most attributes are lost by most operations"
-* data structures not included in atomic vectors:
-  * matrices
-  * arrays
-  * factors
-  * date-times
-
-## References
-
-...by Hadley Wickham
-
-* [Advanced R](http://adv-r.had.co.nz/) (1st edition)
-  * [Data structures](http://adv-r.had.co.nz/Data-structures.html)
-    * Discussion of basic data types in R
-  * [Functional programming](http://adv-r.had.co.nz/Functional-programming.html#functional-programming)
-    * Discussion of R as a functional programming language
-* [Advanced R](https://adv-r.hadley.nz/introduction.html) (2nd edition)
-  * [Advanced R: Introduction](https://adv-r.hadley.nz/introduction.html) (2nd edition)
-    * Answers the question: "Why R?"
-    * Honest discussion of pros and cons -- and introduction of DRY
-* [R for Data Science](https://r4ds.had.co.nz/)
-
-## Wage dataset
-
-A typical example of ISLR2 data...
+Wage dataset is a typical example of ISLR2 data...
 
 ```
 conda activate r_env
@@ -75,20 +33,6 @@ nci.labs <- NCI60$labs
 nci.data <- NCI60$data
 ```
 
-* `typeof(NCI60)` returns "list", which is a heterogeneous data structure in R
-  * In R, the other heterogeneous data structure is a data frame
-* **References**
-* ISLR Ref: https://rdrr.io/cran/ISLR/man/NCI60.html
-* ISLR2 Ref: https://rdrr.io/cran/ISLR2/man/NCI60.html
-* NCI-60 human cancer cell-line screen
-  * [Cell list](https://dtp.cancer.gov/discovery_development/nci-60/cell_list.htm) -- cancer.gov
-  * [Methodology](https://dtp.cancer.gov/discovery_development/nci-60/methodology.htm) -- cancer.gov 
-* ESL refs
-  * Section 14.3.8 (p512) -- K-means
-    * Depends on: "K" and starting configuration
-  * Section 14.3.12 (p520-7) -- Hierarchical clustering
-    * Depends on: dissimilarity measure, clustering strategy (e.g., agglomerative/bottom-up, divisive/top-down)
-
 ## Install R & ISLR2
 
 ```
@@ -104,15 +48,6 @@ conda deactivate
 * [miniconda install](https://docs.conda.io/en/latest/miniconda.html) -- docs.conda.io
 * [managing environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 * [r-base install](https://anaconda.org/conda-forge/r-base)
-
-## ISLR2 data
-
-```
-$ conda activate r_env
-$ R
-> library(IRLR2)
-> write.csv(Wage, 'Wage.csv', row.names=FALSE)
-```
 
 ## Jane Austen's books
 
