@@ -72,9 +72,16 @@ nci.data <- NCI60$data
 * ESL refs
   * Example 4 (p5 & 6) -- DNA expression microarrays
     * Nice high-level description the dataset -- DNA expression for the NCI 60 cell line
-    * 6830 rows represent the genes 
-    * rows represent the genes 
+    * 6830 rows represent the gene-expression measurements
+    * 64 column represent the different cancer cell lines
   * Section 14.3.8 (p512) -- K-means
     * Depends on: "K" and starting configuration
   * Section 14.3.12 (p520-7) -- Hierarchical clustering
     * Depends on: dissimilarity measure, clustering strategy (e.g., agglomerative/bottom-up, divisive/top-down)
+* ISLR2 refs
+  * Section 12.5.4 (p542-7) NCCI60 Data Example
+    * Unsupervised learning lab
+    * Labels are used after the fact to see if clustering is successful at grouping like-cancer types
+  * PCA
+    * Measurements of gene expression range from -6 to 6
+    * Scaling before PCA is done, but it's arguable about whether or not scaling should be used
