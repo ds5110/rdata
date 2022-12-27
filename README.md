@@ -19,19 +19,23 @@ conda deactivate
 
 ## NCI60 dataset
 
-Microarray data has 6830 measurements of 64 cancer-cell lines.
+NCI microarray data. 
 
-* a list containing two elements: data and labs.
-  * data is a 64 by 6830 matrix of the expression values
-  * labs is a vector listing the cancer types for the 64 cell lines.
-* Each cell line has a cancer-type label (`nci.labs`)
-* Data (`nci.data`) has 64 rows and 6830 columns
+* The data contains expression levels on 6830 genes from 64 cancer cell lines.
+* Cancer type is also recorded.
+* The R dataset a list containing two elements: data and labs.
+* data is a 64 by 6830 matrix of the gene-expression values
+* labs is a 64-element vector of cancer-cell types
 
 ```
 library(ISLR2)
-nci.labs <- NCI60$labs
-nci.data <- NCI60$data
+write.csv(NCI60$labs, 'NCI60labs.csv', row.names=FALSE)
+write.csv(NCI60$data, 'NCI60data.csv', row.names=FALSE)
 ```
+* Each cell line has a cancer-type label (`nci.labs`)
+* Data (`nci.data`) has 64 rows and 6830 columns
+* [ISLR package](https://cran.r-project.org/web/packages/ISLR/ISLR.pdf) -- pdf
+* [ISLR2 package](https://cran.r-project.org/web/packages/ISLR2/ISLR2.pdf) -- pdf
 
 ## Install R & ISLR2
 
@@ -48,6 +52,7 @@ conda deactivate
 * [miniconda install](https://docs.conda.io/en/latest/miniconda.html) -- docs.conda.io
 * [managing environments](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 * [r-base install](https://anaconda.org/conda-forge/r-base)
+* [Reproducibility in R](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example) -- sfo
 
 ## Jane Austen's books
 
