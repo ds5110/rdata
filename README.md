@@ -1,6 +1,13 @@
 # rdata
 
-Data converted from R to CSV
+Data converted from R to CSV using `write.table()` and `write.csv()`
+
+* [write.table()](https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/write.table) -- rdocumentation.org
+* `write.csv()` is also documented at this link. But `write.table()` makes more sense.
+* `write.csv()` and `write.csv2()` are wrappers for `write.table()` and according to the documentation...
+  * "These wrappers are deliberately inflexible: 
+  * they are designed to ensure that the correct conventions are used to write a valid file. 
+  * Attempts to change append, col.names, sep, dec or qmethod are ignored, with a warning."
 
 ## ISLR2 data
 
@@ -29,8 +36,8 @@ NCI microarray data.
 
 ```
 library(ISLR2)
-write.csv(NCI60$labs, 'NCI60labs.csv', row.names=FALSE)
-write.csv(NCI60$data, 'NCI60data.csv', row.names=FALSE)
+write.table(NCI60$labs, 'NCI60labs.csv', row.names=FALSE, col.names=FALSE)
+write.table(NCI60$data, 'NCI60data.csv', sep=",", row.names=FALSE, col.names=FALSE)
 ```
 * Each cell line has a cancer-type label (`nci.labs`)
 * Data (`nci.data`) has 64 rows and 6830 columns
