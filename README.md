@@ -28,7 +28,7 @@ conda deactivate
 
 NCI microarray data. 
 
-* The data contains expression levels on 6830 genes for 64 cancer cell lines.
+* The data contains expression levels of 6830 genes for 64 cancer cell lines.
 * In R, the NCI60 dataset is a list containing two elements: data and labs.
 * NCI60$data is a 64 by 6830 matrix of the gene-expression values
 * NCI60$labs is a 64-element vector of cancer-cell types
