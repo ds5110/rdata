@@ -28,19 +28,16 @@ conda deactivate
 
 NCI microarray data. 
 
-* The data contains expression levels on 6830 genes from 64 cancer cell lines.
-* Cancer type is also recorded.
-* The R dataset a list containing two elements: data and labs.
-* data is a 64 by 6830 matrix of the gene-expression values
-* labs is a 64-element vector of cancer-cell types
-
+* The data contains expression levels on 6830 genes for 64 cancer cell lines.
+* In R, the NCI60 dataset is a list containing two elements: data and labs.
+* NCI60$data is a 64 by 6830 matrix of the gene-expression values
+* NCI60$labs is a 64-element vector of cancer-cell types
+* These two objects are stored in separate CSV files
 ```
 library(ISLR2)
 write.table(NCI60$labs, 'NCI60labs.csv', row.names=FALSE, col.names=FALSE)
 write.table(NCI60$data, 'NCI60data.csv', sep=",", row.names=FALSE, col.names=FALSE)
 ```
-* Each cell line has a cancer-type label (`nci.labs`)
-* Data (`nci.data`) has 64 rows and 6830 columns
 * [ISLR package](https://cran.r-project.org/web/packages/ISLR/ISLR.pdf) -- pdf
 * [ISLR2 package](https://cran.r-project.org/web/packages/ISLR2/ISLR2.pdf) -- pdf
 
