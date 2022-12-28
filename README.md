@@ -9,7 +9,7 @@ Data converted from R to CSV using `write.table()` and `write.csv()`
   * they are designed to ensure that the correct conventions are used to write a valid file. 
   * Attempts to change append, col.names, sep, dec or qmethod are ignored, with a warning."
 
-## ISLR2 data
+## ISLR2 Wage data
 
 `Wage` is a typical example of an ISLR2 dataset...
 
@@ -26,20 +26,19 @@ conda deactivate
 
 ## NCI60 dataset
 
-NCI microarray data. 
+NCI60 microarray data -- expression levels of 6830 genes for 64 cancer cell lines
 
-* The data contains expression levels of 6830 genes for 64 cancer cell lines.
 * In R, the NCI60 dataset is a list containing two elements: data and labs.
-* NCI60$data is a 64 by 6830 matrix of the gene-expression values
-* NCI60$labs is a 64-element vector of cancer-cell types
-* These two objects are stored in separate CSV files
+* `NCI60$data` is a 64-by-6830 matrix of the gene-expression values
+* `NCI60$labs` is a 64-element vector of cancer-cell types (labels)
+* These two objects are saved to separate CSV files as follows...
 ```
 library(ISLR2)
 write.table(NCI60$labs, 'NCI60labs.csv', row.names=FALSE, col.names=FALSE)
 write.table(NCI60$data, 'NCI60data.csv', sep=",", row.names=FALSE, col.names=FALSE)
 ```
-* [ISLR package](https://cran.r-project.org/web/packages/ISLR/ISLR.pdf) -- pdf
-* [ISLR2 package](https://cran.r-project.org/web/packages/ISLR2/ISLR2.pdf) -- pdf
+* [ISLR package](https://cran.r-project.org/web/packages/ISLR/ISLR.pdf) documentation -- pdf
+* [ISLR2 package](https://cran.r-project.org/web/packages/ISLR2/ISLR2.pdf) documentation -- pdf
 
 ## Install R & ISLR2
 
