@@ -66,6 +66,18 @@ $ R
 > write.csv(austen_books(), 'janeausten.csv', row.names=FALSE)
 ```
 
+## babynames
+
+I had to gzip the CSV because it was too large for github (57M)
+```
+$ R
+> install.packages("babynames")
+> library(babynames)
+> write.csv(babynames, "babynames.csv", row.names=FALSE)
+> quit()
+gzip babynames.csv
+```
+
 ## nycflights13 dataset
 
 ```
